@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>タイピングゲーム</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>タイピングゲーム</h1>
+
+        <!-- タイマー -->
+        <h2>残り時間: <span id="timer">30</span> 秒</h2>
+
+        <!-- 問題 -->
+        <h2 id="word">apple</h2>
+
+        <!-- 入力欄 -->
+        <input type="text" id="input" disabled>
+
+        <!-- スコア -->
+        <h3>スコア: <span id="score">0</span></h3>
+
+        <!-- スタートボタン -->
+        <button onclick="startGame()">スタート</button>
+
+        <!-- 結果 -->
+        <h2 id="result"></h2>
+
+        <!-- 保存・履歴エリア -->
+        <div id="record" class="record hidden">
+            <button onclick="saveScore()">スコアを保存</button>
+            <button onclick="loadHistory()">履歴を見る</button>
+            <p id="saveMsg"></p>
+            <ul id="historyList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

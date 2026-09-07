@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    text-align: center;
+    font-family: Arial;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.12);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+input {
+    padding: 12px;
+    font-size: 20px;
+    width: 260px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+input::placeholder {
+    color: #dddddd;
+}
+
+input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #4fc3f7;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #81d4fa;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 35px;
+    color: #ffee58;
+}
+
+h3 {
+    font-size: 28px;
+    color: #e0e0e0;
+}
+
+/* 保存・履歴エリア */
+.record {
+    margin-top: 25px;
+}
+
+.record button {
+    margin: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+#saveMsg {
+    font-size: 18px;
+    color: #a5d6a7;
+    min-height: 24px;
+}
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#historyList li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
