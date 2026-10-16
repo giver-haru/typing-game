@@ -4,7 +4,7 @@ header("Content-Type: application/json; charset=utf-8");
 // DB接続情報
 $dsn      = "mysql:host=localhost;dbname=webdb;charset=utf8mb4";
 $dbuser   = "webapp";
-$dbpass   = "********";
+$dbpass   = "your_password";
 
 // リクエストのJSONを受け取る
 $raw  = file_get_contents("php://input");
